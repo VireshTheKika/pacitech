@@ -1,0 +1,62 @@
+1write a program to print “Hello World” in JavaScript.
+2 Take a number input from user and print it.
+3 Add two numbers and display the result.
+4 Check whether a number is even or odd.
+5 Find the largest of three numbers.
+6 Print numbers from 1 to 100 using a loop.
+7 Reverse a string without using built-in reverse function.
+8 Check whether a string is a palindrome.
+9 Count vowels in a given string. Create a simple calculator (add, subtract, multiply, divide).
+
+
+
+write a function to find the second largest number in an array.
+write a program to remove duplicate values from an array.
+write a function to count frequency of each element in an array.
+write a function to capitalize the first letter of every word in a sentence.
+write a program to find the longest word in a string.
+write a program to sort an array without using .sort().
+write a function to merge two arrays and keep only unique values.
+write a program to rotate an array k times (right rotation).
+write a function to flatten a nested array (ex: [1,[2,[3]]] → [1,2,3])
+write a function to check if two strings are anagrams.
+
+
+
+array 
+
+Create an array of 5 numbers and print its length.
+Add a new element to the end of an array using push().
+Add a new element to the beginning of an array using unshift().
+Remove the last element from an array using pop().
+Remove the first element from an array using shift().
+Check if a value exists in an array using includes().
+Find the index of a value using indexOf().
+Replace an element at a given index in an array.
+Join array elements into a string using join()Convert a string "a,b,c,d" into an array using split().
+
+
+Use map() to double every number in an array.
+Use filter() to return only even numbers from an array.
+Use reduce() to sum all numbers in an array.
+Use reduce() to find the maximum number in an array.
+Use slice() to extract part of an array without modifying it.
+Use splice() to insert an element at index 2.
+Use splice() to remove 2 elements starting from index 1.
+Sort an array in ascending order.
+Sort an array of strings alphabeticallyReverse an array using reverse().
+
+Chain filter() and map() to get squares of only even numbers.
+Use reduce() to count how many times each value appears in an array.
+Convert an array of objects to only an array of names using map().
+
+[{name:"A"}, {name:"B"}] → ["A","B"]
+
+Filter objects whose age is greater than 18.
+Sort an array of objects by age property.
+Remove duplicates from an array using filter() or Set.
+Find the second largest number from an array.
+Flatten a nested array [1,[2,[3]]] → [1,2,3] using flat() or reduce.
+Convert array to object like:
+Group objects by property using reduce().
+Example → group users by city.
