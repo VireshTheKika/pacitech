@@ -53,22 +53,18 @@
   <meta name="msapplication-TileImage" href="img/favicon.png" />
 
 </head>
+
 <script>
-  let a = [1, 5, 8];
-  const largestFromThree = (a) => {
-    return a.reduce((a, b) => Math.min(a, b))
-  }
-  console.log(largestFromThree(a));
+  let greeting = "hello world";
+  console.log(greeting.slice(2));
 </script>
 
 <body id="body"
-  class="page-template page-template-template-brand-contacts template-brand-contacts page page-id-58 brand-contacts app-data index-data singular-data page-data page-58-data page-brand-contacts-data template-brand-contacts-data"
-  style="">
+  class="page-template page-template-template-brand-contacts template-brand-contacts page page-id-58 brand-contacts app-data index-data singular-data page-data page-58-data page-brand-contacts-data template-brand-contacts-data">
   <header class="header header--transparent">
     <div class="header__logo">
       <a class="logo" href="index.html">
         <img src="img/logo.png" alt="logo" class="logo">
-
       </a>
     </div>
     <nav class="header__nav slide-up">
@@ -79,7 +75,6 @@
         <li class="menu-item">
           <a href="index.html#about">About US</a>
         </li>
-
         <li class="menu-item menu-item-has-children">
           <a href="products.html"> <span>Products</span></a>
           <svg class="menu-item-icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
@@ -87,7 +82,6 @@
             <path class="menu-item-icon__bg" fill="#00859a" d="M0 0h16v16H0z" />
             <path class="menu-item-icon__chevron" fill="#000000" d="M11.4 5.8 8 9 4.6 5.8l-.9.8L8 10.8l4.3-4.1z" />
           </svg>
-
           <ul class="sub-menu">
             <li class="menu-item">
               <a href="Resimac-Solutions.html"> RESIMAC Solutions</a>
@@ -98,10 +92,6 @@
             <li class="menu-item">
               <a href="celloflex-m.html">CELLOFLEX-M</a>
             </li>
-
-            <!-- <li class="menu-item">
-                      <a href="industrial-grouting.html">Industrial Grouting</a>
-                      </li> -->
             <li class="menu-item">
               <a href="simpson-strongtie.html"> SIMPSON-STRONGTIE:</a>
             </li>
@@ -112,14 +102,6 @@
             <li class="menu-item">
               <a href="cable-sealing-compound.html">Cable Sealing Compound</a>
             </li>
-            <!-- <li class="menu-item">
-                      <a href="specialist-alignment-services.html">Specialist Alignment Services</a>
-                      </li>
-                      <li class="menu-item">
-                      <a href="diving-underwater-survey-underwater-videography.html">Diving, Underwater Survey & Underwater Videography</a>
-                      </li> -->
-
-
           </ul>
         </li>
 
@@ -388,48 +370,80 @@
 
   <main class="main">
 
-    <section class="hero-overlap parallex-c">
-      <div class="hero-overlap__img">
-        <picture>
-          <source media="(min-width: 1080px)" srcset="img/banner/chemical.jpg">
-          <source media="(min-width: 480px)" srcset="img/banner/chemical.jpg">
-          <img srcset="img/banner/Coldweld-Repair-Systems-s.jpg" alt="">
-        </picture>
-      </div>
-      <div class="container container--sm relative">
-        <div class="hero-overlap__content">
-          <h2 class="hero-overlap__sub-title aeo700 echo caps light">PRODUCTS</h2>
-          <h1 class="hero-overlap__title aeo500 light">RESIMAC Solutions</h1>
-        </div>
+    <section style="
+    position: relative; 
+    height: 300px; 
+    width: 100%; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    overflow: hidden;
+    background-color: #333;
+">
+      <img src="img/breadcrumb-pacitech.png" alt="Background" style="
+      position: absolute; 
+      top: 0; 
+      left: 0; 
+      width: 100%; 
+      height: 100%; 
+      object-fit: cover; 
+      z-index: 1;
+  ">
+
+      <div style="
+      position: absolute; 
+      top: 0; 
+      left: 0; 
+      width: 100%; 
+      height: 100%; 
+      background: rgba(0, 0, 0, 0.4); 
+      z-index: 2;
+  "></div>
+
+      <div style="position: relative; z-index: 3; text-align: center; color: #ffffff;">
+        <h1 style="font-size: 3rem; margin: 0; font-weight: 600; letter-spacing: 1px; text-transform: uppercase;"
+          class="aeo500">
+          Resimac Solution
+        </h1>
+        <p style="margin-top: 10px; font-size: 0.9rem; opacity: 0.9;">
+          Home &nbsp;/&nbsp; Products &nbsp;/&nbsp;Resimac Solution
+        </p>
       </div>
     </section>
+
+
+
+    <style>
+      @media (max-width: 768px) {
+        .new-hero-section {
+          flex-direction: column !important;
+          gap: 40px;
+        }
+
+        .hero-sec-image {
+          width: 100% !important;
+        }
+      }
+    </style>
 
     <section class="intro-overlap-section foreground scroll-down-target">
       <div class="intro-overlap-wrapper">
         <div class="container container--sm">
           <div class="intro-overlap">
             <div class="intro-overlap__content">
-              <h3 class="aeo700 echo caps body bottom--md">Solvent free epoxy, polyurethane & silicone composites &
-                industrial coatings.</h3>
+              <!-- <h3 class="aeo700 echo caps body bottom--md">Solvent free epoxy, polyurethane & silicone composites &
+                industrial coatings.</h3> -->
               <h2 class="aeo700 alpha secondary bottom--lg"></h2>
               <div class="intro-textareas textareas-updated">
                 <div class="part-1">
-                  <img srcset="img/resimac-solutions.jpg" alt="">
-                  <!-- <a href="#" class="case-studies__item">
-                                  <div class="case-studies__img">
-                                    <picture>
-                                      <source media="(min-width: 480px)" srcset="img/alignment.jpg">
-                                    
-                                    </picture>
-                                  </div>                            
-                            </a> -->
+                  <img style="height: 650px;" srcset="img/resimac-solutions.jpg" alt="">
                 </div>
 
                 <div class="col-6 part-2 px-5">
                   <div class="intro-textareas__item">
-                    <h3 class="aeo700 echo caps body"
+                    <!-- <h3 class="aeo700 echo caps body"
                       style="background-color: #060668; width: fit-content; border-radius: 5px; padding: 10px 20px;color: white;margin-bottom: 15px;">
-                      Products </h3>
+                      Products </h3> -->
                     <h2 class="aeo400 body">RESIMAC Solutions</h2>
                     <!-- <p class="aeo400 base primary"><span class="aeo700">2022</span> . Canusa</p> -->
                     <div class="wysiwyg">
@@ -452,6 +466,200 @@
 
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="card-grid">
+
+        <!-- CARD -->
+        <div class="card">
+          <div class="card-header">
+            <h4>FLUID FLOW, ABRASION, IMPACT REPAIR SYSTEMS</h4>
+          </div>
+
+          <div class="card-footer">
+            <button class="view-btn" onclick="openModal('modal1')">View Details</button>
+          </div>
+        </div>
+
+        <!-- COPY THIS CARD FOR MORE -->
+        <div class="card">
+          <div class="card-header">
+            <h4>Card Two</h4>
+          </div>
+          <div class="card-footer">
+            <button class="view-btn" onclick="openModal('modal2')">View Details</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h4>Card Three</h4>
+          </div>
+          <div class="card-footer">
+            <button class="view-btn" onclick="openModal('modal3')">View Details</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- MODAL 1 -->
+
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal1')">&times;</span>
+        <p>Resimetal 201 Ceramic Repair Paste</p>
+        <p>Resimetal 202 Ceramic Repair Fluid</p>
+        <p>Resimetal 203 Super Flow Ceramic Fluid</p>
+        <p>Resimetal 204 Heavy Duty Ceramic Repair Paste</p>
+        <p>Resimetal 205 Ceramic HT Fluid</p>
+        <p>Resimetal 206 Ceramic HTA Fluid</p>
+        <p>Resimetal 208 Ceramic UW</p>
+        <p> Resichem 209 EIP PU Extreme Impact Protection</p>
+        <a href="pdf/02_Res_Abrasion_Wear_&_Impact_200_series.pdf" class="download-btn">
+          Download PDF
+        </a>
+      </div>
+    </div>
+
+    <style>
+      .card-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+        margin-top: 30px;
+        justify-items: center;
+        width: 87%;
+        margin-left: auto;
+      }
+
+      .card {
+        background: #fff;
+        border-radius: 12px;
+        padding: 20px;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        border: 1px solid #eee;
+        transition: 0.3s;
+        width: 450px;
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+      }
+
+      .card-header h4 {
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 15px;
+      }
+
+      .view-btn {
+        background: black;
+        color: white;
+        padding: 10px 18px;
+        border-radius: 8px;
+        border: none;
+        cursor: pointer;
+      }
+
+      .view-btn:hover {
+        background: #444;
+      }
+
+      /* MODAL */
+      .modal {
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.6);
+        justify-content: center;
+        align-items: center;
+      }
+
+      .modal-content {
+        background: white;
+        width: 500px;
+        max-width: 90%;
+        padding: 25px;
+        border-radius: 12px;
+        position: relative;
+      }
+
+      .close {
+        position: absolute;
+        right: 15px;
+        top: 10px;
+        font-size: 25px;
+        cursor: pointer;
+      }
+
+      .download-btn {
+        display: inline-block;
+        background: #060669;
+        color: white;
+        padding: 10px 14px;
+        border-radius: 8px;
+        text-decoration: none;
+      }
+
+      .download-btn:hover {
+        background: #060669;
+      }
+
+      /* TABLET - 2 cards per row */
+      @media (max-width: 991px) {
+        .card-grid {
+          grid-template-columns: repeat(2, 1fr);
+          width: 95%;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        .card {
+          width: 100%;
+        }
+      }
+
+      /* MOBILE - 1 card per row */
+      @media (max-width: 767px) {
+        .card-grid {
+          grid-template-columns: 1fr;
+          width: 95%;
+          gap: 18px;
+        }
+
+        .card {
+          width: 80%;
+        }
+
+        .modal-content {
+          width: 90%;
+        }
+      }
+    </style>
+    <script>
+      function openModal(id) {
+        document.getElementById(id).style.display = "flex";
+      }
+
+      function closeModal(id) {
+        document.getElementById(id).style.display = "none";
+      }
+    </script>
+    <section class="intro-overlap-section foreground scroll-down-target">
+      <div class="intro-overlap-wrapper">
+        <div class="container container--sm">
+          <div class="intro-overlap">
+            <div class="intro-overlap__content">
+              <h3 class="aeo700 echo caps body bottom--md">Solvent free epoxy, polyurethane & silicone composites &
+                industrial coatings.</h3>
+              <h2 class="aeo700 alpha secondary bottom--lg"></h2>
+              <div class="intro-textareas textareas-updated">
 
 
                 <div class="intro-textareas__item">
@@ -489,6 +697,57 @@
                         </div>
                       </div>
 
+                      <!-- <p>
+
+                        
+                        push() adds element to end → [1,2].push(3) → [1,2,3] |
+                        pop() removes last element → [1,2,3].pop() → [1,2] |
+                        unshift() adds element at start → [2,3].unshift(1) → [1,2,3] |
+                        shift() removes first element → [1,2].shift() → [2] |
+                        splice() add/remove at index → [1,2,3].splice(1,1,'a') → [1,'a',3] |
+                        slice() returns part of array → [1,2,3].slice(1,3) → [2,3] |
+                        concat() merges arrays → [1].concat([2,3]) → [1,2,3] |
+                        map() transforms values → [1,2].map(x=>x*2) → [2,4] |
+                        filter() keeps matching values → [1,2,3].filter(x=>x>1) → [2,3] |
+                        reduce() accumulates to single value → [1,2,3].reduce((a,b)=>a+b) → 6 |
+                        forEach() loops through array → [1,2].forEach(x=>console.log(x)) |
+                        find() gets first matching → [1,2,3].find(x=>x>1) → 2 |
+                        findIndex() returns index → [1,2].findIndex(x=>x===2) → 1 |
+                        includes() checks existence → [1,2].includes(2) → true |
+                        indexOf() returns index of value → [1,2,3].indexOf(2) → 1 |
+                        lastIndexOf() last position → [1,2,1].lastIndexOf(1) → 2 |
+                        sort() sorts array → [3,1,2].sort() → [1,2,3] |
+                        reverse() reverses array → [1,2].reverse() → [2,1] |
+                        join() converts to string → [1,2].join('-') → "1-2" |
+                        toString() converts to string → [1,2].toString() → "1,2" |
+                        every() checks all true → [2,4].every(x=>x%2 === 0) → true |
+                        some() checks if any true →[1,2].some( x = >x>1) → true |
+                        flat() flattens nested array → [1,[2,3]].flat() → [1,2,3] |
+                        flatMap() map + flat → [1,2].flatMap(x=>[x,x*2]) → [1,2,2,4] |
+
+                        Returns New Array : 
+
+                        slice() → returns selected part as new array arr.slice(1,3) ➝ new array
+                        concat() → returns merged array arr.concat(b) ➝ new array
+                        map() → returns transformed array arr.map(x=>x*2)
+                        filter() → returns filtered array arr.filter(x=>x>1)
+                        flat() → returns flattened array[1,[2,3]].flat()
+                        flatMap() → map + flat → returns new array[1,2].flatMap(x=>[x,x*2])
+                        sort() (⚠ modifies original, but returns same reference — not a new independent array)
+                        reverse() (⚠ modifies original, but returns same reference — not a new independent array)
+
+                        Modifies Original Array (NO new array):
+
+                        push()
+                        pop()
+                        shift()
+                        unshift()
+                        splice()
+                        reverse() (mutates)
+                        sort() (mutates)
+
+
+                      </p> -->
                       <div class="accordion__item">
                         <div class="accordion__trigger">
                           <svg class="box-arrow-icon" width="34" height="23" xmlns="http://www.w3.org/2000/svg"
@@ -519,6 +778,7 @@
                           </div>
                         </div>
                       </div>
+
                       <div class="accordion__item">
                         <div class="accordion__trigger">
                           <svg class="box-arrow-icon" width="34" height="23" xmlns="http://www.w3.org/2000/svg"
@@ -566,6 +826,7 @@
                           </div>
                         </div>
                       </div>
+
                       <div class="accordion__item">
                         <div class="accordion__trigger">
                           <svg class="box-arrow-icon" width="34" height="23" xmlns="http://www.w3.org/2000/svg"
@@ -625,13 +886,6 @@
                         </div>
                       </div>
 
-
-
-
-
-
-
-
                       <div class="accordion__item">
                         <div class="accordion__trigger">
                           <svg class="box-arrow-icon" width="34" height="23" xmlns="http://www.w3.org/2000/svg"
@@ -652,6 +906,7 @@
                           </div>
                         </div>
                       </div>
+
                       <div class="accordion__item">
                         <div class="accordion__trigger">
                           <svg class="box-arrow-icon" width="34" height="23" xmlns="http://www.w3.org/2000/svg"
@@ -1340,8 +1595,6 @@
             </div>
           </div>
         </div>
-
-
       </div>
     </section>
 

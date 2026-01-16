@@ -658,6 +658,110 @@
 				</nav>
 			</div>
 		</section>
+
+
+		<section style="display: flex; justify-content: center; padding: 40px 20px;">
+			<div style="display: flex; flex-wrap: wrap; max-width: 1200px; width: 100%; gap: 40px;">
+
+				<div style="flex: 1; min-width: 300px;">
+					<h2 class="alpha aeo400 primary bottom" style="font-size: 32px; margin-bottom: 20px;">Get in Touch
+					</h2>
+					<p style="line-height: 1.6; margin-bottom: 20px;">
+						Have questions about our products or services? Our team is here to help you find the right
+						solution for your project.
+					</p>
+					<div>
+						<ul style="margin-top: 30px;gap: 15px;display: grid;">
+							<li style="display: flex;align-items: center;gap: 15px;line-height: 25px;">
+								<img style="width:40px;" src="img/pin-pac.png" alt="">
+								B-102, Bldg. No. 2, Amit Nagar,
+								Yari Road, Versova, Andheri (W),
+								Mumbai - 400061
+							</li>
+							<li style="display: flex;align-items: center;gap: 15px;"><img style="width:40px;"
+									src="img/mail-pac.png" alt="">
+								mansoor@pacitech.in
+							</li>
+							<li style="display: flex;align-items: center;gap: 15px;"><img style="width:40px;"
+									src="img/phone-pac.png" alt="">
+								98864 09789
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div id="contact-form-wrapper" class="enquiry__form"
+					style="flex: 1; min-width: 300px;  padding: 30px; border-radius: 8px;">
+					<h3 class="aeo700 echo caps body bottom" style="font-size: 20px; margin-top: 0;">Leave a message
+					</h3>
+					<div class="form-message form-message--output"></div>
+
+					<script type="text/javascript">
+						var onloadCallback = function () {
+							register_grecaptcha = grecaptcha.render('recaptcha', {
+								'sitekey': '6Lc9SOIeAAAAAG2axPOrwxFoviNpxcSsE9G_UZEI'
+							});
+						};
+					</script>
+
+					<form id="contact-form" class="contact-form">
+						<div class="form-grid" style="display: flex; flex-direction: column; gap: 15px;">
+							<fieldset class="form-grid__row">
+								<input type="text" name="full_name" id="cf_name" placeholder="Your Name*" required
+									style="width: 100%; padding: 10px;">
+							</fieldset>
+							<fieldset class="form-grid__row">
+								<input type="email" name="email" id="cf_email" placeholder="Email Address*" required
+									style="width: 100%; padding: 10px;">
+							</fieldset>
+							<fieldset class="form-grid__row">
+								<input type="text" name="company" id="cf_company" placeholder="Company Name"
+									style="width: 100%; padding: 10px;">
+							</fieldset>
+							<fieldset class="form-grid__row">
+								<input type="tel" name="telephone" id="cf_telephone" placeholder="Contact Number*"
+									required style="width: 100%; padding: 10px;">
+							</fieldset>
+							<fieldset class="form-grid__row">
+								<textarea name="message" id="cf_message" placeholder="Message*" required
+									style="width: 100%; padding: 10px; height: 100px;"></textarea>
+							</fieldset>
+
+							<fieldset class="form-grid__row">
+								<input type="hidden" name="sent_from" value="https://www.sealforlife.com/contact/">
+								<div class="g-recaptcha" data-sitekey="6Lc9SOIeAAAAAG2axPOrwxFoviNpxcSsE9G_UZEI"
+									style="margin-bottom: 15px;"></div>
+								<button type="submit" class="btn"
+									style="padding: 12px 30px; cursor: pointer; background: #060669; color: #fff; border: none;">Send</button>
+							</fieldset>
+
+							<fieldset class="form-grid__row">
+								<label class="checkbox">
+									<span class="checkbox__label"
+										style="font-size: 12px; color: #666; display: block; margin-top: 15px;">
+										<strong>Disclaimer:</strong> Information & photographs on this website are an
+										overview of OEM range of products. The manufacturer reserves the right to change
+										properties without notice.
+									</span>
+								</label>
+							</fieldset>
+						</div>
+					</form>
+
+					<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+					<template class="template-success" hidden>
+						<h3 class="aeo400 alpha primary bottom--md">Thank you!</h3>
+						<p class="aeo400 base body">Your message has been sent.</p>
+					</template>
+					<template class="template-error" hidden>
+						<h3 class="aeo400 charlie error">Uh Oh!</h3>
+						<p class="aeo400 base body">Something went wrong, please see errors below:</p>
+						<ul id="errors" class="errors-list"></ul>
+					</template>
+				</div>
+			</div>
+		</section>
+
 		<section class="enquiry-section is-dark-hero">
 
 			<div class="enquiry__content">
@@ -723,74 +827,13 @@
 				</div>
 			</div>
 		</section>
-		<section>
-			<div id="contact-form-wrapper" class="enquiry__form">
-				<h3 class="aeo700 echo caps body bottom">Leave a message</h3>
-				<div class="form-message form-message--output"></div>
-				<script type="text/javascript">
-					var onloadCallback = function () {
-						register_grecaptcha = grecaptcha.render('recaptcha', {
-							'sitekey': '6Lc9SOIeAAAAAG2axPOrwxFoviNpxcSsE9G_UZEI'
-						});
-					};
-				</script>
-				<form id="contact-form" class="contact-form">
-					<div class="form-grid">
-						<fieldset class="form-grid__row form-grid__row--name">
-							<input type="text" name="full_name" id="cf_name" placeholder="Your Name*" required>
-						</fieldset>
-						<fieldset class="form-grid__row form-grid__row--email">
-							<input type="email" name="email" id="cf_email" placeholder="Email Address*" required>
-						</fieldset>
-						<fieldset class="form-grid__row form-grid__row--company">
-							<input type="text" name="company" id="cf_company" placeholder="Company Name">
-						</fieldset>
-						<fieldset class="form-grid__row form-grid__row--telephone">
-							<input type="tel" name="telephone" id="cf_telephone" placeholder="Contact Number*" required>
-						</fieldset>
-						<fieldset class="form-grid__row form-grid__row--message">
-							<textarea name="message" id="cf_message" placeholder="Message*" required></textarea>
-						</fieldset>
 
-						<fieldset class="form-grid__row form-grid__row--submit">
-							<input type="hidden" name="sent_from" value="https://www.sealforlife.com/contact/">
-							<button type="submit" class="btn">Send</button>
-							<div class="g-recaptcha" data-sitekey="6Lc9SOIeAAAAAG2axPOrwxFoviNpxcSsE9G_UZEI"></div>
-						</fieldset>
 
-						<fieldset class="form-grid__row form-grid__row--message">
-							<label class="checkbox">
-
-								<span class="checkbox__label">Disclaimer:
-									Information & photographs on this website are an overview of OEM range of
-									products & our services. For more updated details please refer to original OEM
-									catalogue. Products names, logos, brands & other trademarks featured or referred
-									to herein are the property of their respective trademark holders.
-									The manufacturer reserves the right to change or modify any part of the product
-									& its related properties without any prior notice.
-								</span>
-							</label>
-
-						</fieldset>
-					</div>
-				</form>
-				<script src="../../www.google.com/recaptcha/api.js" async defer></script> <!--googleoff: all -->
-				<template class="template-success" hidden>
-					<h3 class="aeo400 alpha primary bottom--md">Thank you!</h3>
-					<p class="aeo400 base body">Your message has been sent.</p>
-				</template>
-				<template class="template-error" hidden>
-					<h3 class="aeo400 charlie error">Uh Oh!</h3>
-					<p class="aeo400 base body">Something went wrong, please see errors below:</p>
-					<ul id="errors" class="errors-list"></ul>
-				</template>
-				<!--googleon: all -->
-			</div>
-		</section>
-		<div class="map-box" data-aos="fade-up" data-aos-duration="1200" style="margin: 0 auto;padding-bottom: 40px;">
+		<div class="map-box" data-aos="fade-up" data-aos-duration="1200"
+			style="margin: 0 auto;padding-bottom: 40px;display: flex;justify-content: center;">
 
 			<div class="map-box">
-				<iframe
+				<iframe style="border-radius: 10px;"
 					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4099.757014446054!2d73.01757181103343!3d19.072771851998937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c15d4b295555%3A0xe389679ce75ceeb6!2sPacitech%20Chemical%20Engg.%20Pvt.%20Ltd.!5e1!3m2!1sen!2sin!4v1768026876398!5m2!1sen!2sin"
 					width="1200" height="500" allowfullscreen="" loading="lazy"></iframe>
 				</iframe>

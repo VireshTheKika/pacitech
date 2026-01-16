@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 a,
 abbr,
 acronym,
@@ -103,9 +105,9 @@ nav,
 section {
   display: block;
 }
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Livvic", sans-serif;
   line-height: 1;
   font-weight: 300;
 }
@@ -784,10 +786,10 @@ body {
 }
 
 .parallex-d {
-  background-image: url("../img/banner/epocast-36.jpg");
+  /* background-image: url("../img/banner/epocast-36.jpg"); */
 
   /* Set a specific height */
-  min-height: 500px;
+  min-height: 300px;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -805,8 +807,14 @@ body {
   flex-flow: column;
   justify-content: stretch;
   width: calc(50% + 40px);
+  /* border-top: 1px solid #a5a8b5; */
+}
 
-  border-top: 1px solid #a5a8b5;
+@media screen and (max-width: 720px) {
+  .part-1,
+  .part-2 {
+    width: 100%;
+  }
 }
 
 main {
@@ -921,9 +929,9 @@ strong {
 .container--md {
   max-width: 1350px;
 }
-.container--sm {
+/* .container--sm {
   max-width: 1160px;
-}
+} */
 .container--xs {
   max-width: 960px;
 }
@@ -1240,7 +1248,7 @@ strong {
   margin-top: 14px;
 }
 .aeo400 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Livvic", sans-serif;
 }
 .aeo400,
 .aeo500 {
@@ -1248,10 +1256,10 @@ strong {
   font-style: normal;
 }
 .aeo500 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Livvic", sans-serif;
 }
 .aeo700 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Livvic", sans-serif;
   font-weight: 300;
   font-style: normal;
 }
@@ -1320,7 +1328,7 @@ strong {
 }
 .wysiwyg h1,
 .wysiwyg h2 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Livvic", sans-serif;
   font-weight: 100;
   font-style: normal;
   margin: 45px 0 30px;
@@ -1361,7 +1369,7 @@ strong {
 .wysiwyg h4,
 .wysiwyg h5,
 .wysiwyg h6 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Livvic", sans-serif;
   font-weight: 100;
   font-style: normal;
   margin: 35px 0 20px;
@@ -1434,7 +1442,7 @@ strong {
   color: #a5a8b5;
 }
 .wysiwyg strong {
-  font-family: "Poppins", sans-serif;
+  font-family: "Livvic", sans-serif;
   font-weight: 100;
   font-style: normal;
 }
@@ -1470,7 +1478,7 @@ strong {
   background: #f2f2f2;
 }
 .wysiwyg table th {
-  font-family: "Poppins", sans-serif;
+  font-family: "Livvic", sans-serif;
   font-weight: 100;
   font-style: normal;
 }
@@ -1508,7 +1516,7 @@ strong {
   margin: 0 0 25px;
 }
 .dash-list li {
-  font-family: "Poppins", sans-serif;
+  font-family: "Livvic", sans-serif;
   font-weight: 100;
   font-style: normal;
   position: relative;
@@ -1627,7 +1635,7 @@ strong {
   }
 }
 .pagination .page-numbers {
-  font-family: "Poppins", sans-serif;
+  font-family: "Livvic", sans-serif;
   font-weight: 100;
   font-style: normal;
   position: relative;
@@ -1670,8 +1678,8 @@ strong {
   will-change: transform;
 }
 .btn {
-  font-family: "Poppins", sans-serif;
-  font-weight: 100;
+  font-family: "Livvic", sans-serif;
+  font-weight: 300;
   font-style: normal;
   display: inline-block;
   min-width: 260px;
@@ -1724,7 +1732,7 @@ strong {
   }
 }
 .list-btn {
-  font-family: "Poppins", sans-serif;
+  font-family: "Livvic", sans-serif;
   font-weight: 100;
   font-style: normal;
   display: inline-block;
@@ -1762,7 +1770,7 @@ strong {
   }
 }
 .list-btn sup {
-  font-family: "Poppins", sans-serif;
+  font-family: "Livvic", sans-serif;
   font-weight: 100;
   font-style: normal;
   margin-left: 3px;
@@ -1801,9 +1809,9 @@ textarea {
   color: #000;
   background: #fff;
   border: 1px solid #dddee3;
-  border-radius: 0;
+  border-radius: 12px;
   -webkit-appearance: none;
-  font-family: "Poppins", sans-serif;
+  font-family: "Livvic", sans-serif;
   font-weight: 100;
   font-style: normal;
   font-size: 16px;
@@ -1927,7 +1935,7 @@ select {
   margin: 0;
   padding: 18px 100px 18px 20px;
   color: #000;
-  font-family: "Poppins", sans-serif;
+  font-family: "Livvic", sans-serif;
   font-weight: 100;
   font-style: normal;
   font-size: 16px;
@@ -1964,7 +1972,7 @@ select {
 .selectric-wrapper .selectric-items li {
   padding: 12px 20px;
   color: #000;
-  font-family: "Poppins", sans-serif;
+  font-family: "Livvic", sans-serif;
   font-weight: 100;
   font-style: normal;
   font-size: 16px;
@@ -2021,9 +2029,9 @@ select {
 .checkbox__label {
   display: inline-block;
   color: #4e5d6c;
-  padding-left: 43px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 100;
+  /* padding-left: 43px; */
+  font-family: "Livvic", sans-serif;
+  font-weight: 300;
   font-style: normal;
   font-style: italic;
   font-size: 16px;
@@ -2104,7 +2112,7 @@ select {
   list-style-type: disc;
 }
 .form-message .errors-list li {
-  font-family: "Poppins", sans-serif;
+  font-family: "Livvic", sans-serif;
   font-weight: 100;
   font-style: normal;
   color: #c50f0f;
@@ -2534,8 +2542,8 @@ select {
   object-fit: cover;
 }
 .hero-overlap__content {
-  min-height: 820px;
-  padding: 130px 0 260px;
+  /* min-height: 820px; */
+  padding: 17px 0 130px;
 }
 @media screen and (min-width: 480px) {
   .hero-overlap__content {
@@ -2544,21 +2552,21 @@ select {
 }
 @media screen and (min-width: 768px) {
   .hero-overlap__content {
-    padding-top: 240px;
+    padding-top: 120px;
   }
 }
-@media screen and (min-width: 1600px) {
+/* @media screen and (min-width: 1600px) {
   .hero-overlap__content {
     min-height: 970px;
   }
-}
+} */
 @media screen and (max-width: 1079px) {
   .hero-overlap__sub-title {
     margin-bottom: 15px;
   }
 }
 .hero-overlap__title {
-  font-size: 55px;
+  font-size: 43px;
   line-height: 60px;
   letter-spacing: -0.5px;
 }
@@ -2571,7 +2579,7 @@ select {
 }
 @media screen and (min-width: 1600px) {
   .hero-overlap__title {
-    font-size: 100px;
+    font-size: 70px;
     line-height: 110px;
   }
 }
@@ -2656,22 +2664,22 @@ select {
 }
 .intro-overlap-wrapper {
   position: relative;
-  margin-top: -200px;
-  padding-left: 30px;
-  background: linear-gradient(90deg, transparent 30px, #fff 0);
+  /* margin-top: -200px; */
+  /* padding-left: 30px; */
+  /* background: linear-gradient(90deg, transparent 30px, #fff 0); */
 }
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   .intro-overlap-wrapper {
-    padding-left: 60px;
+    /* padding-left: 60px; */
     background: linear-gradient(90deg, transparent 60px, #fff 0);
   }
-}
+} */
 @media screen and (min-width: 1360px) {
   .intro-overlap-wrapper {
     padding-left: 0;
   }
 }
-@media screen and (min-width: 1644px) {
+/* @media screen and (min-width: 1644px) {
   .intro-overlap-wrapper {
     background: linear-gradient(
       90deg,
@@ -2679,13 +2687,13 @@ select {
       #fff calc(50% - 722px)
     );
   }
-}
+} */
 .intro-overlap {
   position: relative;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
-  padding: 80px 15px;
+  /* padding: 80px 15px; */
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .intro-overlap {
@@ -2693,11 +2701,11 @@ select {
     padding-right: 30px;
   }
 }
-@media screen and (min-width: 1080px) {
+/* @media screen and (min-width: 1080px) {
   .intro-overlap {
     padding: 130px 0;
   }
-}
+} */
 /* .intro-overlap__content{
     max-width:960px
 } */
@@ -3370,7 +3378,7 @@ select {
 .numbered-blocks__item:before {
   content: "0" counter(block);
   display: block;
-  font-family: "Poppins", sans-serif;
+  font-family: "Livvic", sans-serif;
   font-weight: 100;
   font-style: normal;
   color: #060668;
@@ -3410,7 +3418,7 @@ select {
 }
 .numbered-blocks__item .wysiwyg li,
 .numbered-blocks__item .wysiwyg p {
-  font-family: "Poppins", sans-serif;
+  font-family: "Livvic", sans-serif;
   font-weight: 300;
   font-style: normal;
   color: #fff;
@@ -4198,7 +4206,7 @@ select {
   fill: #000;
 }
 .px-5 {
-  padding: 30px;
+  padding: 10px;
 }
 .header--dark:not(.nav-is-active) .header-menu .sub-menu {
   box-shadow: 5px 5px 11px 0 rgba(0, 0, 0, 0.3);
@@ -4271,7 +4279,7 @@ select {
 }
 .header .sub-menu > .menu-item > a,
 .header .sub-menu > .menu-item > span {
-  font-family: "Poppins", sans-serif;
+  font-family: "Livvic", sans-serif;
   font-weight: 300;
   font-style: normal;
   font-size: 14px;
@@ -4297,7 +4305,7 @@ select {
 }
 .header-menu > .menu-item > a,
 .header-menu > .menu-item > span {
-  font-family: "poppins", sans-serif;
+  font-family: "Livvic", sans-serif;
   font-weight: 300;
   font-style: normal;
   font-size: 18px;
@@ -4572,7 +4580,7 @@ select {
 }
 .nav__menu > .menu-item > a,
 .nav__menu > .menu-item > span {
-  font-family: "Poppins", sans-serif;
+  font-family: "Livvic", sans-serif;
   font-weight: 100;
   font-style: normal;
   font-size: 25px;
@@ -4602,7 +4610,7 @@ select {
 @media (hover: hover) {
   .nav__menu > .menu-item > a:hover,
   .nav__menu > .menu-item > span:hover {
-    font-family: "Poppins", sans-serif;
+    font-family: "Livvic", sans-serif;
     font-weight: 100;
     font-style: normal;
     color: #060668;
@@ -4655,7 +4663,7 @@ select {
   }
 }
 .nav__menu > .menu-item-has-children--active > span {
-  font-family: "Poppins", sans-serif;
+  font-family: "Livvic", sans-serif;
   font-weight: 100;
   font-style: normal;
   color: #ffffff;
@@ -4715,7 +4723,7 @@ select {
   }
 }
 .nav__menu .sub-menu > .menu-item > a {
-  font-family: "Poppins", sans-serif;
+  font-family: "Livvic", sans-serif;
   font-weight: 300;
   font-style: normal;
   font-size: 20px;
@@ -4741,7 +4749,7 @@ select {
   }
 }
 .nav__menu .sub-menu > .menu-item > a:hover {
-  font-family: "Poppins", sans-serif;
+  font-family: "Livvic", sans-serif;
   font-weight: 100;
   font-style: normal;
   color: #060668;
@@ -4781,7 +4789,7 @@ select {
   }
 }
 .nav__menu .menu-item--markets .sub-menu > .menu-item > a {
-  font-family: "Poppins", sans-serif;
+  font-family: "Livvic", sans-serif;
   font-weight: 100;
   font-style: normal;
   font-size: 12px;
@@ -4851,7 +4859,7 @@ select {
 }
 .nav__menu .menu-item--brands .sub-menu > .menu-item > a {
   display: block;
-  font-family: "Poppins", sans-serif;
+  font-family: "Livvic", sans-serif;
   font-weight: 100;
   font-style: normal;
   font-size: 11px;
@@ -5107,7 +5115,7 @@ select {
   border-color: #ffffff;
 }
 .footer__brands .box-dropdown {
-  font-family: "Poppins", sans-serif;
+  font-family: "Livvic", sans-serif;
   font-weight: 100;
   font-style: normal;
   position: relative;
@@ -5161,7 +5169,7 @@ select {
 }
 .footer__brands .box-dropdown .sub-menu > .menu-item > a,
 .footer__brands .box-dropdown .sub-menu > .menu-item > span {
-  font-family: "Poppins", sans-serif;
+  font-family: "Livvic", sans-serif;
   font-weight: 100;
   font-style: normal;
   font-size: 14px;
@@ -5302,7 +5310,7 @@ select {
   margin-bottom: 10px;
 }
 .footer-menu li a {
-  font-family: "Poppins", sans-serif;
+  font-family: "Livvic", sans-serif;
   font-weight: 100;
   font-style: normal;
 }
@@ -7164,7 +7172,7 @@ select {
     display: block;
     width: calc(25% - 25px);
     color: #a5a8b5;
-    font-family: "Poppins", sans-serif;
+    font-family: "Livvic", sans-serif;
     font-weight: 100;
     font-style: normal;
     font-size: 16px;
@@ -7187,7 +7195,7 @@ select {
   display: none;
 }
 .cs-filters__options .cs-filter-btn input[type="radio"]:checked ~ span {
-  font-family: "Poppins", sans-serif;
+  font-family: "Livvic", sans-serif;
   font-weight: 100;
   font-style: normal;
   color: #000;
@@ -7209,7 +7217,7 @@ select {
   }
 }
 .cs-filters__options .cs-filter-btn.active {
-  font-family: "Poppins", sans-serif;
+  font-family: "Livvic", sans-serif;
   font-weight: 100;
   font-style: normal;
   color: #000;
@@ -7345,7 +7353,7 @@ select {
   }
 }
 .cs-modal-menu > li {
-  font-family: "Poppins", sans-serif;
+  font-family: "Livvic", sans-serif;
   font-weight: 100;
   font-style: normal;
   margin-bottom: 20px;
@@ -7381,7 +7389,7 @@ select {
   }
 }
 .cs-modal-menu > li a.active {
-  font-family: "Poppins", sans-serif;
+  font-family: "Livvic", sans-serif;
   font-weight: 100;
   font-style: normal;
   color: #060668;
@@ -7490,7 +7498,7 @@ select {
 }
 .cs-filters-form .brands-list__item label {
   display: block;
-  font-family: "Poppins", sans-serif;
+  font-family: "Livvic", sans-serif;
   font-weight: 100;
   font-style: normal;
   font-size: 11px;
@@ -7580,7 +7588,7 @@ select {
 }
 .cs-filters-form .filter-list li input[type="checkbox"]:checked ~ span,
 .cs-filters-form .filter-list li input[type="radio"]:checked ~ span {
-  font-family: "Poppins", sans-serif;
+  font-family: "Livvic", sans-serif;
   font-weight: 100;
   font-style: normal;
   color: #060668;
@@ -8283,7 +8291,7 @@ select {
   margin-bottom: 10px;
 }
 .brand-contacts-list__address a {
-  font-family: "Poppins", sans-serif;
+  font-family: "Livvic", sans-serif;
   font-weight: 100;
   font-style: normal;
   color: #060668;
@@ -8638,7 +8646,7 @@ select {
     line-height: 35px;
   }
 }
-@media screen and (min-width: 1080px) {
+/* @media screen and (min-width: 1080px) {
   .enquiry-section {
     padding: 200px 0 100px;
     background: linear-gradient(
@@ -8647,12 +8655,12 @@ select {
       #f2f2f2 calc(50% - 120px)
     );
   }
-}
-@media screen and (min-width: 1360px) {
+} */
+/* @media screen and (min-width: 1360px) {
   .enquiry-section {
     padding: 250px 0 130px;
   }
-}
+} */
 .enquiry {
   display: flex;
   flex-flow: row wrap;
@@ -9052,7 +9060,7 @@ select {
   }
 }
 #portal-assets_wrapper .dataTables_length label {
-  font-family: "Poppins", sans-serif;
+  font-family: "Livvic", sans-serif;
   font-weight: 100;
   font-style: normal;
 }
@@ -9093,7 +9101,7 @@ select {
 }
 #portal-assets_wrapper .dataTables_filter input,
 #portal-assets_wrapper .dataTables_filter label {
-  font-family: "Poppins", sans-serif;
+  font-family: "Livvic", sans-serif;
   font-weight: 100;
   font-style: normal;
 }
@@ -9117,7 +9125,7 @@ select {
   }
 }
 #portal-assets_wrapper .dataTables_info {
-  font-family: "Poppins", sans-serif;
+  font-family: "Livvic", sans-serif;
   font-weight: 100;
   font-style: normal;
 }
@@ -9127,7 +9135,7 @@ select {
   }
 }
 #portal-assets_wrapper .dataTables_empty {
-  font-family: "Poppins", sans-serif;
+  font-family: "Livvic", sans-serif;
   font-weight: 100;
   font-style: normal;
   text-align: center;
@@ -9146,7 +9154,7 @@ select {
 }
 #portal-assets_wrapper .dataTables_paginate .paginate_button {
   color: #060668;
-  font-family: "Poppins", sans-serif;
+  font-family: "Livvic", sans-serif;
   font-weight: 100;
   font-style: normal;
   text-transform: uppercase;
@@ -9229,7 +9237,7 @@ select {
   padding: 0 38px 0 0;
   border: none;
   background: none;
-  font-family: "Poppins", sans-serif;
+  font-family: "Livvic", sans-serif;
   font-weight: 100;
   font-style: normal;
 }
@@ -9794,3 +9802,12 @@ img.mfp-img {
   align-items: center;
   flex-direction: column;
 } */
+
+.textareas-updated {
+  flex-direction: row;
+}
+@media screen and (max-width: 768px) {
+  .textareas-updated {
+    flex-direction: column;
+  }
+}

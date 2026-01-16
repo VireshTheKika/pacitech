@@ -1,4 +1,4 @@
-1write a program to print “Hello World” in JavaScript.
+1 write a program to print “Hello World” in JavaScript.
 2 Take a number input from user and print it.
 3 Add two numbers and display the result.
 4 Check whether a number is even or odd.
@@ -7,8 +7,6 @@
 7 Reverse a string without using built-in reverse function.
 8 Check whether a string is a palindrome.
 9 Count vowels in a given string. Create a simple calculator (add, subtract, multiply, divide).
-
-
 
 write a function to find the second largest number in an array.
 write a program to remove duplicate values from an array.
@@ -21,8 +19,6 @@ write a program to rotate an array k times (right rotation).
 write a function to flatten a nested array (ex: [1,[2,[3]]] → [1,2,3])
 write a function to check if two strings are anagrams.
 
-
-
 array 
 
 Create an array of 5 numbers and print its length.
@@ -34,7 +30,6 @@ Check if a value exists in an array using includes().
 Find the index of a value using indexOf().
 Replace an element at a given index in an array.
 Join array elements into a string using join()Convert a string "a,b,c,d" into an array using split().
-
 
 Use map() to double every number in an array.
 Use filter() to return only even numbers from an array.
